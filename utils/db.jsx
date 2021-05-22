@@ -1,6 +1,6 @@
-import { MongoClient } from 'mongodb'
-
-const { MONGODB_URI, MONGODB_DB } = process.env
+import { MongoClient } from "mongodb";
+const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_DB = process.env.MONGODB_DB;
 
 if (!MONGODB_URI) {
   throw new Error(
@@ -13,7 +13,7 @@ if (!MONGODB_DB) {
     'Please define the MONGODB_DB environment variable inside .env.local'
   )
 }
-
+let cached = global.mongo
 if (!cached) {
   cached = global.mongo = { conn: null, promise: null }
 }
