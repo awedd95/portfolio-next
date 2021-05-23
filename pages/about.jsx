@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 
 const About = () => {
 	return(
-		<>
+		<div className={styles.container}>
 			<Head>
         <title>Aaron Wedd - About Me</title>
         <meta name="description" content="Welcome to my portfolio, here are some of my accomplishments and certifications" />
@@ -14,7 +14,7 @@ const About = () => {
 			<main className={styles.main}>
 				<Typography variant="h3">What I've done and what I'm good at</Typography>
 			</main>
-		</>
+		</div>
 	)
 }
 
