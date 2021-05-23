@@ -6,7 +6,7 @@ const Blog = () => {
 	return(
 		<div className={styles.container}>
 			<Head>
-        <title>Aaron Wedd - About Me</title>
+        <title>Aaron Wedd - Blog</title>
         <meta name="description" content="Welcome to my portfolio, here are some of my accomplishments and certifications" />
         <link rel="icon" href="/favicon.ico" />
 			</Head>
